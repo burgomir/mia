@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.wallet { 
+  display: flex;
+  padding: 3rem;
+  flex-direction: row-reverse;
+}
+
+.center {
+  position: relative;
+  padding: 3rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form > * + * {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.form button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(var(--on-accent-rgb));
+  background-color: rgb(var(--accent-rgb));
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: rgb(var(--darker-accent-rgb));
+}
+
+.form button span {
+  white-space: nowrap;
+}
+
+.form button svg {
+  width: 1rem;
+  fill: currentColor;
+}
+
+.field {
+  display: block;
+}
+
+.field span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: .5rem;
+  border: 1px solid rgb(var(--tertiary-background-rgb));
+  border-radius: var(--border-radius);
+  background: rgb(var(--secondary-background-rgb));
+  color: rgb(var(--hint-rgb));
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.loading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.loading svg {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(var(--accent-rgb));
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.success {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  background: rgb(var(--secondary-background-rgb));
+  border: 1px solid rgb(var(--tertiary-background-rgb));
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.success > div {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.success code {
+  font-family: var(--font-mono);
+  color: rgb(var(--secondary-foreground-rgb));
+}
+
+.success svg {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(var(--accent-rgb));
+}
+
+.success:hover {
+  background-color: rgb(var(--hover-background-rgb));
+}
+
+.success:hover code {
+  color: rgb(var(--accent-rgb));
+}
+
+
+
+
+.container {
+ 
+  position: relative;
+ 
+  top: -20px;
+}
+@media screen and (min-width: 374px)  {
+  .container {
+    display: block;
+    justify-content: center;
+    width: 149%;
+    position: relative;
+    left: -30%;
+    top: -20px;
+  }
+
+  .title {text-align: center;
+    justify-content: center;
+    
+  }
+  /* .bigcontainer {
+
+    width: 90%;
+    
+  } */
+  .image {
+    width: 280px;
+    height: 260px;
+    margin-left: 15%;
+    margin-top: 30px;
+  }
+  .title {
+    position: relative;
+    top: -370px;
+
+    /* margin-bottom: 510px; */
+  }
+  .paragraph {
+    /* width: 110%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  /* font-weight: 300; */
+  font-style: normal;
+  }
+  .tdiv {
+    /* padding-top: 340px; */
+    position: relative;
+    top: 10px;
+  }
+  
+  .lists1, .lists12, .lists13  {
+    /* top: -60px; */
+    position: relative;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 78%;
+    padding: 33px;
+    font-size: 11px;
+  }
+    .lists12  {
+      /* top: -60px; */
+      position: relative;
+      left: 3%;
+     
+    }
+  .listsimg, .listsimg1, .lists2  {
+    top: 50px;
+    font-size: 5px;
+    width: 120px;
+    height: 12px;
+    left: -2px;
+    /* padding-left: 9px; */
+    position: relative;
+   
+  }
+  .listsimg {
+    width: 15px;
+    height: 14px;
+    position: relative;
+    left: 2px;
+  }
+  .lists {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 78%;
+    padding: 2px;
+    top: 60px;
+    position: relative;
+    z-index: 9999;
+    list-style-type: none;
+  }
+  .txt  {
+    white-space: nowrap;
+    font-size: 11px;
+    margin-top: -20px;
+    padding-left: 26px;
+  }
+  .gradient {
+    top: 30px;
+    position: relative;
+    height: 30px;
+    width: 830px;
+  }
+  @media (min-width: 320px) and (max-width: 502px){
+    .gradient {
+      width: 950px;
+      margin-left: -13px;
+    }   }
+
+  .progress {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 424px) and (max-width:767px) and (max-width: 1024px)  { 
+    .container {
+      display: block;
+      justify-content: center;
+      width: 119%;
+      position: relative;
+      left: -13%;
+      
+    }
+    
+    /* .bigcontainer {
+
+      width: 90%;
+      
+    } */
+    .image {
+      width: 280px;
+      height: 260px;
+      margin-left: 12%;
+      margin-top: 30px;
+    }
+    .title {
+      position: relative;
+      top: -356px;
+      /* margin-bottom: 510px; */
+    }
+    .paragraph {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    
+    
+    .lists1, .lists12, .lists13  {
+      /* top: -60px; */
+      position: relative;
+      justify-content: space-around;
+      white-space: nowrap;
+      width: 78%;
+      padding: 33px;
+      font-size: 11px;
+    }
+      .lists12  {
+        /* top: -60px; */
+        position: relative;
+        left: 3%;
+       
+      }
+    .listsimg, .listsimg1, .lists2  {
+      top: 8px;
+      font-size: 5px;
+      width: 120px;
+      height: 12px;
+      left: -2px;
+      /* padding-left: 9px; */
+      position: relative;
+     
+    }
+    .listsimg {
+      width: 15px;
+      height: 14px;
+      position: relative;
+      left: 2px;
+    }
+    .lists {
+      display: flex;
+      justify-content: space-around;
+      white-space: nowrap;
+      width: 78%;
+      padding: 2px;
+      top: 60px;
+      position: relative;
+      z-index: 9999;
+      list-style-type: none;
+    }
+    .txt  {
+      white-space: nowrap;
+      font-size: 11px;
+      margin-top: -20px;
+      padding-left: 26px;
+    }
+    .gradient {
+      top: 30px;
+      position: relative;
+      height: 30px;
+      /* width: 100%; */
+    }
+    .progress {
+      text-align: center;
+      margin-top: 120px;
+    }
+}
+
+
+@media screen and (min-width:767px)  { 
+  .container {
+    display: block;
+    justify-content: center;
+    width: 99%;
+    position: relative;
+    left: 4%;
+    
+  }
+  /* .bigcontainer {
+
+    width: 90%;
+    
+  } */
+  .image {
+    width: 300px;
+    height: 280px;
+    margin-left: 20%;
+    margin-top: 30px;
+  }
+  .title {
+    position: relative;
+    top: -360px;
+    /* margin-bottom: 510px; */
+  }
+  .paragraph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .lists1, .lists12, .lists13  {
+    /* top: -60px; */
+    position: relative;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 78%;
+    padding-left: 58px;
+    padding-top: 9%;
+    font-size: 11px;
+  }
+  .lists13 {
+    position: relative;
+    left: -8px;
+  }
+    .lists12  {
+      /* top: -60px; */
+      position: relative;
+      left: 2%;
+     
+    }
+  .listsimg, .listsimg1, .lists2  {
+    top: 8px;
+    font-size: 5px;
+    width: 120px;
+    height: 12px;
+    left: 1px;
+    /* padding-left: 9px; */
+    position: relative;
+   
+  }
+  .listsimg {
+    width: 15px;
+    height: 14px;
+    position: relative;
+    left: 2px;
+  }
+  .lists {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 78%;
+    padding: 2px;
+    top: 60px;
+    position: relative;
+    z-index: 9999;
+    list-style-type: none;
+  }
+  .txt  {
+    white-space: nowrap;
+    font-size: 11px;
+    margin-top: -20px;
+    padding-left: 50px;
+  }
+  .gradient {
+    top: 30px;
+    position: relative;
+    height: 30px;
+    /* width: 100%; */
+  }
+  .progress {
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (min-width: 1121px) and (max-width: 2560px) { 
+  
+  .container {
+    display: flex;
+  }
+  .image {
+    height: 400px;
+    width: 1000px;
+    margin-left: 0px;
+  }
+  .bigcontainer{
+    margin-left: -54%;
+    width: 210%;
+    top: -60px;
+  }
+  .gradient {
+    width: 80%;
+  }
+  .lists {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 78%;
+    padding: 2px;
+    top: 30px;
+    position: relative;
+    list-style-type: none;
+  }
+  .listsimg1 {
+    top: 6px;
+  position: relative;
+  }
+  .listsimg {
+
+    width: 80%;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: 4%;
+    
+  }
+  /* .bigcontainer {
+
+    width: 90%;
+    
+  } */
+  
+  .title {
+    position: relative;
+    top: 20px;
+    text-align: initial;font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal
+
+    /* margin-bottom: 510px; */
+  }
+  .paragraph {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal
+  }
+  
+  
+  .lists1, .lists12, .lists13  {
+    /* top: -60px; */
+    position: relative;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 78%;
+    padding-left: 64px;
+    padding-top: 9%;
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+  }
+  .lists13 {
+    position: relative;
+    left: -3px;
+  }
+    .lists12  {
+      /* top: -60px; */
+      position: relative;
+      left: 0%;
+     
+    }
+  .listsimg, .listsimg1, .lists2  {
+    top: 8px;
+    font-size: 5px;
+    width: 120px;
+    height: 12px;
+    left: 1px;
+    /* padding-left: 9px; */
+    position: relative;
+   
+  }
+  .listsimg1 {
+    width: 40%;
+    height: 10px;
+  }
+  .listsimg {
+    width: 15px;
+    height: 14px;
+    position: relative;
+    left: 2px;
+  }
+  .lists {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 78%;
+    padding: 2px;
+    top: 60px;
+    position: relative;
+    z-index: 9999;
+    list-style-type: none;
+  }
+  .txt  {
+    white-space: nowrap;
+    font-size: 11px;
+    margin-top: -20px;
+    padding-left: 50px;
+  }
+  .gradient {
+    top: 30px;
+    position: relative;
+    height: 30px;
+    /* width: 100%; */
+  }
+  .progress {
+    /* text-align: center; */
+    margin-right: 28rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  }
+}
+
+.mintt{
+  margin-left: 12vw;
+  right: 12rem;
+    position: relative;
+}
+@media (min-width: 1920px) and (max-width: 2560px){
+  .mintt{
+    margin-left: 7vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 502px){
+   .mintt{
+    margin-left: 17vw;
+  }
+       }
+
+.mintbox{
+  width: 14vw;
+  /* background-size: 113px; */
+  background-color: #FFC700;
+  border-radius: 5px;
+}
+@media (min-width: 1920px) and (max-width: 2560px){
+  .mintbox{
+    width: 8vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 502px){
+  .mintbox{
+    width: 43vw;
+  }
+}
+
